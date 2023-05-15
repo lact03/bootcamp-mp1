@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+    max-height: 50px;
+}
+
+ul > li {
+    display: inline-block;
+}
+
+li a:link {
+    color: black;
+}
+
+li a:link:hover {
+    color: rgb(128,128,0);
+}
+
+.hero-img {
+    background: url(./img/sofa-header.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 500px;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.product img {
+    width: 33%;
+    height: auto;
+}
+
+.footer {
+    height: 100vh;
+}
