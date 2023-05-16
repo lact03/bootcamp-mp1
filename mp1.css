@@ -1,8 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
 }
+
+/* header */
 
 .navbar-brand > img {
     width: 100px;
@@ -10,22 +11,58 @@
     border-radius: 50%;
 }
 
+input.form-control {
+    border-radius: 0;
+}
+
 .hero-img {
-    background: url(./img/sofa-header.jpg);
+    background: url(./img/brown-sofa.jpg);
     background-size: cover;
-    height: 85vh;
-    max-width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    min-width: 100%;
+    min-height: 90vh;
 }
 
-div.col-md-4 img[src^="./img/"] {
+.title {
+    flex-direction: column;
+}
+
+div.title h1{
+    color: #0A8AFF;
+}
+
+div.title p {
+    color: #0A8AFF;
+}
+
+/* Main */
+
+div.card {
+    height: 100%;
     width: 100%;
+}
+
+div.card a {
     height: 90%;
+    width: 100%;
 }
 
-.col-md-4 {
-    border-radius: 10%;
+div.card img{
+    width: 100%;
+    height: 100%;
 }
 
-h3 {
-    text-align: center;
+button.btn {
+    border-radius: 0;
+}
+
+button.dropdown-toggle {
+    height: 40px;
+    width: 90px;
+}
+
+/* footer */
+.about {
+    background: #8B4200;
 }
