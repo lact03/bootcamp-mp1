@@ -31,18 +31,25 @@
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
+                    <form class="d-flex mb-4 mb-md-0" role="search">
                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-dark" type="submit">Search</button>
                     </form>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-light btn-outline-dark me-3">
+                            log in
+                        </button>
+                        <button class="btn btn-light btn-outline-dark">
+                            register
+                        </button>
+                    </div>
                 </div>
             </div>
         </nav>
         <div class="row hero-img">
             <div class="title col-12 d-flex justify-content-center align-items-center">
-              <h1>Simple Ease Sofa</h1>
-              <p>bruhbruh</p>
-              <a href="#"><button class="btn btn-primary" type="button">Shop Now!</button></a>
+                <h1>Simple Ease Sofa</h1>
+                <p>bruhbruh</p>
+                <a href="#"><button class="btn btn-primary" type="button">Shop Now!</button></a>
             </div> 
         </div>
     </header>
@@ -50,54 +57,67 @@
         <div class="row mt-5">
             <div class="col-3 col-md-2">
                 <div class="filter d-flex flex-column">
-                    <div class="dropdown mb-3">
-                        <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                            Category
-                        </button>
-                        <div class="dropdown-menu">
-                            <div class="form-check px-5">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
-                                <label class="form-check-label" for="flexCheck1">
-                                    Fabric
-                                </label>
-                            </div>
-                            <div class="form-check px-5">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheck2">
-                                <label class="form-check-label" for="flexCheck2">
-                                    Leather
-                                </label>
-                            </div>
-                            <div class="form-check px-5">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheck3">
-                                <label class="form-check-label" for="flexCheck3">
-                                    Sofa-bed
-                                </label>
-                            </div>
-                            <div class="form-check px-5">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheck4">
-                                <label class="form-check-label" for="flexCheck4">
-                                    Modular
-                                </label>
-                            </div>
+                    <div>
+                        <h4>Category</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
+                            <label class="form-check-label" for="flexCheck1">
+                                Fabric
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck2">
+                            <label class="form-check-label" for="flexCheck2">
+                                Leather
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck3">
+                            <label class="form-check-label" for="flexCheck3">
+                                Sofa-bed
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck4">
+                            <label class="form-check-label" for="flexCheck4">
+                                Modular
+                            </label>
                         </div>
                     </div>
-                    <div class="dropdown mb-3">
-                        <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                            Price
-                        </button>
-                        <div class="dropdown-menu">
-                            <div class="form-check px-5">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
-                                <label class="form-check-label" for="flexCheck1">
-                                    P0 - P2500
-                                </label>
-                            </div>
-                            <div class="form-check px-5">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheck2">
-                                <label class="form-check-label" for="flexCheck2">
-                                    P2500 - 5000
-                                </label>
-                            </div>
+                    <div class="mt-5">
+                        <h4>Price</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
+                            <label class="form-check-label" for="flexCheck1">
+                                P0 - P2500
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck2">
+                            <label class="form-check-label" for="flexCheck2">
+                                P2500 - 5000
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <h4>Color</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
+                            <label class="form-check-label" for="flexCheck1">
+                                Grey
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck2">
+                            <label class="form-check-label" for="flexCheck2">
+                                Beige
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck3">
+                            <label class="form-check-label" for="flexCheck3">
+                                Black
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -164,19 +184,76 @@
     </main>
     <footer class="container-lg">
         <div class="about row">
-            <div class="col-9"></div>
-                <p class="about-us-title">About Us</p>
+            <div class="col-12 col-md-4 p-3">
+                <img src="img/reception.jpg">
+            </div>
+            <div class="col-12 col-md-8 p-3">
+                <h4 class="text-center">About Us</h4>
                 <p>At Simply Ease Sofa, we believe that everyone deserves to have a comfortable and stylish home. That's why we offer a wide variety of sofas and other furniture to choose from, all at an affordable price.</p>
                 <p>We know that finding the perfect sofa can be a daunting task, so we offer a variety of resources to help you make the right decision. Our website features detailed product descriptions, high-quality photos, and customer reviews. We also have a team of experienced furniture experts who are available to answer your questions and help you find the perfect sofa for your needs.</p>
-                <p>In addition to our wide selection of sofas, we also offer a variety of other furniture, including chairs, tables, beds, and more. We also have a team of professional interior designers who can help you create a stylish and functional home décor.</p>
+                <p>In addition to our wide selection of sofas, we also offer a variety of other furniture, including chairs, tables, beds, and more. We also have a team of professional interior designers who can help you create a stylish and functional home décor.</p>  
+            </div>
+        </div>
+        <hr>
+        <div class="quick-link row text-center">
+            <div class="col-12 col-md-4 mb-md-0 mb-5 border-end">
+                <h5>Sign Up to Our Newsletter</h5>
+                <form>
+                    <div class="mb-3">
+                      <input type="email" class="form-control" placeholder="Email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" placeholder="Password" id="exampleInputPassword1">
+                    </div>
+                    <div>
+                        <p>No Account Yet? Register <a href="#">Here</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-md-0 mb-5">
+                        <div>
+                            <ul>
+                                <h5>Shop</h5>
+                                <li><a href="#">Fabric</a></li>
+                                <li><a href="#">Leather</a></li>
+                                <li><a href="#">Modular</a></li>
+                                <li><a href="#">Footstools</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-md-0 mb-5">
+                        <ul>
+                            <h5>Customer Service</h5>
+                            <li><a href="#">Shipping & Returns</a></li>
+                            <li><a href="#">Store Policy</a></li>
+                            <li><a href="#">Payment Methods</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 mb-md-0 mb-5">
+                        <ul>
+                            <h5>About Us</h5>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Designers</a></li>
+                            <li><a href="#">Stores</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="col-3">
-
+        </div>
+        <div class="contact d-flex justify-content-around mb-md-0 mb-5">
+            <div>
+                <img src="./img/logo.png">
             </div>
-        <hr>
-        <div class="contact row">
-            CONTACT
+            <div>
+                <p>500 Jupiter Mars Street, Helios, Milky Way City</p>
+                <p>0987-654-3210</p>
+            </div>
+        </div>
+        <div class="copyright row">
+            <p>Copyright © 2023 by Simply Ease Sofa</p>
         </div>
     </footer>
 
