@@ -6,7 +6,7 @@
 
 /* header */
 
-img[src="./img/logo.png"] {
+img[src="../img/logo.png"] {
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -21,29 +21,20 @@ button.btn {
 }
 
 .hero-img {
-    background: url(./img/brown-sofa.jpg);
+    background: url(../img/brown-sofa.jpg);
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
-    min-width: 100%;
-    min-height: 90vh;
+    min-width: 50%;
+    min-height: 40vh;
 }
 
-.title {
-    flex-direction: column;
-}
-
-div.title h1{
+div.hero-img h1, div.hero-img h5 {
     color: #0A8AFF;
     text-shadow: 1px 1px black;
 }
 
-div.title h5 {
-    color: #0A8AFF;
-    text-align: center;
-    margin-bottom: 25px;
-    text-shadow: 1px 1px black;
-}
+/* Main */
+
 /* Main */
 div.col-lg-4.col-md-6.col-12 {
     padding: 10px;
@@ -52,6 +43,10 @@ div.col-lg-4.col-md-6.col-12 {
 div.card {
     height: 100%;
     width: 100%;
+    border-end-start-radius: 0;
+    border-end-end-radius: 0;
+    border-start-start-radius: 10%;
+    border-start-end-radius: 10%;
 }
 
 div.card a {
@@ -69,21 +64,10 @@ button.dropdown-toggle {
     width: 90px;
 }
 
-/* footer */
-div.about {
-    background: black;
-    color: white;
-    text-align: justify;
-    margin-top: 50px;
-}
-
-div.about .col-lg-5 img {
-    width: 100%;
-    height: 100%;
-}
-
+/* Footer */
 div.quick-link {
-    background: linear-gradient(black, white 50%);
+    margin-top: 50px;
+    background: linear-gradient(black 0%, white 50%);
 }
 
 div.quick-link li {

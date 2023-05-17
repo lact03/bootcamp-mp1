@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* header */
+
+img[src="../img/logo.png"] {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+input.form-control {
+    border-radius: 0;
+}
+
+button.btn {
+    border-radius: 0;
+}
+
+/* Main */
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+main h1, main h5 {
+    text-align: center;
+}
+
+/* footer */
+
+/* Footer */
+div.quick-link {
+    margin-top: 50px;
+    background: linear-gradient(black 0%, white 50%);
+}
+
+div.quick-link li {
+    margin-bottom: 5px;
+}
+
+div.quick-link p > a {
+    text-decoration: none;
+}
+
+div.quick-link p > a:link, p > a:visited {
+    color: darkslateblue;
+}
+
+.quick-link li > a:link, li > a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+div.contact {
+    margin-top: 20px;
+}
+
+div.contact div {
+    padding: 0 25px;
+}
+
+.copyright {
+    background: linear-gradient(white,black);
+    color: white;
+    text-align: center;
+    padding: auto;
+    margin-top: 10px;
+}
