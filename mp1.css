@@ -6,6 +6,10 @@
 
 /* header */
 
+nav div.container-fluid {
+    background: #795c34;
+}
+
 img[src="./img/logo.png"] {
     width: 90px;
     height: 90px;
@@ -45,13 +49,22 @@ div.title h5 {
     text-shadow: 1px 1px black;
 }
 /* Main */
+main {
+    background: #795c34;
+    color: white;
+}
+
 div.col-lg-4.col-md-6.col-12 {
-    padding: 10px;
+    padding: 20px;
 }
 
 div.card {
     height: 100%;
     width: 100%;
+    border-end-start-radius: 0;
+    border-end-end-radius: 0;
+    border-start-start-radius: 10%;
+    border-start-end-radius: 10%;
 }
 
 div.card a {
@@ -71,10 +84,9 @@ button.dropdown-toggle {
 
 /* footer */
 div.about {
-    background: black;
+    background: #795c34;
     color: white;
     text-align: justify;
-    margin-top: 50px;
 }
 
 div.about .col-lg-5 img {
@@ -83,7 +95,7 @@ div.about .col-lg-5 img {
 }
 
 div.quick-link {
-    background: linear-gradient(black, white 50%);
+    background: linear-gradient(#795c34, white);
 }
 
 div.quick-link li {
@@ -112,7 +124,7 @@ div.contact div {
 }
 
 .copyright {
-    background: linear-gradient(white,black);
+    background: linear-gradient(white,#795c34);
     color: white;
     text-align: center;
     padding: auto;

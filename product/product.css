@@ -5,6 +5,9 @@
 }
 
 /* header */
+nav div.container-fluid {
+    background: #795c34;
+}
 
 img[src="../img/logo.png"] {
     width: 90px;
@@ -36,8 +39,13 @@ div.hero-img h1, div.hero-img h5 {
 /* Main */
 
 /* Main */
+main {
+    background: #795c34;
+    color: white;
+}
+
 div.col-lg-4.col-md-6.col-12 {
-    padding: 10px;
+    padding: 20px;
 }
 
 div.card {
@@ -66,8 +74,7 @@ button.dropdown-toggle {
 
 /* Footer */
 div.quick-link {
-    margin-top: 50px;
-    background: linear-gradient(black 0%, white 50%);
+    background: linear-gradient(#795c34, white);
 }
 
 div.quick-link li {
@@ -96,7 +103,7 @@ div.contact div {
 }
 
 .copyright {
-    background: linear-gradient(white,black);
+    background: linear-gradient(white,#795c34);
     color: white;
     text-align: center;
     padding: auto;

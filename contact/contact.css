@@ -5,6 +5,9 @@
 }
 
 /* header */
+nav div.container-fluid {
+    background: #795c34;
+}
 
 img[src="../img/logo.png"] {
     width: 90px;
@@ -22,6 +25,11 @@ button.btn {
 
 /* Main */
 
+main {
+    background: #795c34;
+    color: white;
+}
+
 .contact-us {
     display: flex;
     flex-direction: column;
@@ -35,8 +43,7 @@ main h1, main h5 {
 
 /* Footer */
 div.quick-link {
-    margin-top: 50px;
-    background: linear-gradient(black 0%, white 50%);
+    background: linear-gradient(#795c34, white 50%);
 }
 
 div.quick-link li {
@@ -65,7 +72,7 @@ div.contact div {
 }
 
 .copyright {
-    background: linear-gradient(white,black);
+    background: linear-gradient(white,#795c34);
     color: white;
     text-align: center;
     padding: auto;
