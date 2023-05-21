@@ -6,7 +6,7 @@
 
 /* header */
 nav div.container-fluid {
-    background: #795c34;
+    background: radial-gradient(circle farthest-side at 95% 10%, #503D22cf, #503D22);
 }
 
 img[src="../img/logo.png"] {
@@ -23,16 +23,29 @@ button.btn {
     border-radius: 0;
 }
 
+#navbarSupportedContent li > a {
+    color: white;
+}
+
 .hero-img {
-    background: url(../img/brown-sofa.jpg);
+    background: rgba(0,0,0,0.75)url(../img/shop-all-hero.jpg);
     background-size: cover;
     background-position: center;
     min-width: 50%;
     min-height: 40vh;
+    background-blend-mode: darken;
 }
 
-div.hero-img h1, div.hero-img h5 {
+div.hero-img h1{
     color: #0A8AFF;
+    text-shadow: 1px 1px black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div.hero-img h5 {
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
     text-shadow: 1px 1px black;
 }
 
@@ -40,12 +53,14 @@ div.hero-img h1, div.hero-img h5 {
 
 /* Main */
 main {
-    background: #795c34;
+    background: #223550;
     color: white;
 }
 
 div.col-lg-4.col-md-6.col-12 {
     padding: 20px;
+    height: 360px;
+    max-width: 100%;
 }
 
 div.card {
@@ -58,7 +73,7 @@ div.card {
 }
 
 div.card a {
-    height: 90%;
+    height: 80%;
     width: 100%;
 }
 
@@ -74,7 +89,12 @@ button.dropdown-toggle {
 
 /* Footer */
 div.quick-link {
-    background: linear-gradient(#795c34, white);
+    background: linear-gradient(#503D22, #503D22af);
+    color: white;
+}
+
+div.quick-link ul {
+    padding: 0;
 }
 
 div.quick-link li {
@@ -86,16 +106,17 @@ div.quick-link p > a {
 }
 
 div.quick-link p > a:link, p > a:visited {
-    color: darkslateblue;
+    color: blue;
 }
 
 .quick-link li > a:link, li > a:visited {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 div.contact {
-    margin-top: 20px;
+    background: linear-gradient(#503D22af, #503D22);
+    color: white;
 }
 
 div.contact div {
@@ -103,7 +124,7 @@ div.contact div {
 }
 
 .copyright {
-    background: linear-gradient(white,#795c34);
+    background: #503D22;
     color: white;
     text-align: center;
     padding: auto;

@@ -6,7 +6,7 @@
 
 /* header */
 nav div.container-fluid {
-    background: #795c34;
+    background: radial-gradient(circle farthest-side at 95% 10%, #503D22cf, #503D22);
 }
 
 img[src="../img/logo.png"] {
@@ -23,27 +23,40 @@ button.btn {
     border-radius: 0;
 }
 
+#navbarSupportedContent li > a {
+    color: white;
+}
+
 /* Main */
 
 main {
-    background: #795c34;
+    background: #223550;
     color: white;
 }
 
 .contact-us {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 main h1, main h5 {
     text-align: center;
+}
+
+textarea.form-control {
+    border-radius: 0;
 }
 
 /* footer */
 
 /* Footer */
 div.quick-link {
-    background: linear-gradient(#795c34, white 50%);
+    background: linear-gradient(#503D22, #503D22af);
+    color: white;
+}
+
+div.quick-link ul {
+    padding: 0;
 }
 
 div.quick-link li {
@@ -55,16 +68,17 @@ div.quick-link p > a {
 }
 
 div.quick-link p > a:link, p > a:visited {
-    color: darkslateblue;
+    color: blue;
 }
 
 .quick-link li > a:link, li > a:visited {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 div.contact {
-    margin-top: 20px;
+    background: linear-gradient(#503D22af, #503D22);
+    color: white;
 }
 
 div.contact div {
@@ -72,7 +86,7 @@ div.contact div {
 }
 
 .copyright {
-    background: linear-gradient(white,#795c34);
+    background: #503D22;
     color: white;
     text-align: center;
     padding: auto;

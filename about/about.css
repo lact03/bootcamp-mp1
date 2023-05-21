@@ -7,7 +7,7 @@
 /* header */
 
 nav div.container-fluid {
-    background: #795c34;
+    background: radial-gradient(circle farthest-side at 95% 10%, #503D22cf, #503D22);
 }
 
 img[src="../img/logo.png"] {
@@ -24,10 +24,17 @@ button.btn {
     border-radius: 0;
 }
 
-.hero-img {
-    background: #795c34;
+#navbarSupportedContent li > a {
+    color: white;
+}
+
+div.hero-img {
+    background: rgba(0,0,0,0.7)url(../img/about-us-hero.jpg);
+    background-size: cover;
+    background-position: center;
     min-width: 50%;
     min-height: 40vh;
+    background-blend-mode: darken;
 }
 
 .hero-img p, .hero-img h1 {
@@ -36,12 +43,20 @@ button.btn {
 }
 
 /* Main */
-main > div.row {
-    background: #795c34;
+
+main > div.mission {
+    background: #223550;
     color: white;
+    min-height: 105vh;
 }
 
-main div.col-lg-8 > p {
+main div.col-lg-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+main div.col-lg-8 > p, main div.col-lg-8 > h3 {
     text-align: justify;
 }
 
@@ -53,7 +68,12 @@ img[src="../img/about-us.jpg"] {
 
 /* Footer */
 div.quick-link {
-    background: linear-gradient(#795c34, white);
+    background: linear-gradient(#503D22, #503D22af);
+    color: white;
+}
+
+div.quick-link ul {
+    padding: 0;
 }
 
 div.quick-link li {
@@ -65,16 +85,17 @@ div.quick-link p > a {
 }
 
 div.quick-link p > a:link, p > a:visited {
-    color: darkslateblue;
+    color: blue;
 }
 
 .quick-link li > a:link, li > a:visited {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 div.contact {
-    margin-top: 20px;
+    background: linear-gradient(#503D22af, #503D22);
+    color: white;
 }
 
 div.contact div {
@@ -82,7 +103,7 @@ div.contact div {
 }
 
 .copyright {
-    background: linear-gradient(white,#795c34);
+    background: #503D22;
     color: white;
     text-align: center;
     padding: auto;

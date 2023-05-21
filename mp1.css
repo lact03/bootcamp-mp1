@@ -7,7 +7,7 @@
 /* header */
 
 nav div.container-fluid {
-    background: #795c34;
+    background: radial-gradient(circle farthest-side at 95% 10%, #503D22cf, #503D22);
 }
 
 img[src="./img/logo.png"] {
@@ -24,14 +24,20 @@ button.btn {
     border-radius: 0;
 }
 
+#navbarSupportedContent li > a {
+    color: white;
+}
+
 .hero-img {
-    background: url(./img/brown-sofa.jpg);
+    background: rgba(0,0,0,0.7)url(./img/brown-sofa.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     min-width: 100%;
     min-height: 90vh;
+    background-blend-mode: darken;
 }
+
 
 .title {
     flex-direction: column;
@@ -40,22 +46,26 @@ button.btn {
 div.title h1{
     color: #0A8AFF;
     text-shadow: 1px 1px black;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 div.title h5 {
-    color: #0A8AFF;
+    color: white;
     text-align: center;
     margin-bottom: 25px;
     text-shadow: 1px 1px black;
 }
+
 /* Main */
 main {
-    background: #795c34;
+    background: #223550;
     color: white;
 }
 
 div.col-lg-4.col-md-6.col-12 {
     padding: 20px;
+    height: 360px;
+    max-width: 100%;
 }
 
 div.card {
@@ -68,7 +78,7 @@ div.card {
 }
 
 div.card a {
-    height: 90%;
+    height: 80%;
     width: 100%;
 }
 
@@ -84,18 +94,38 @@ button.dropdown-toggle {
 
 /* footer */
 div.about {
-    background: #795c34;
+    background: #223550;
     color: white;
     text-align: justify;
+    min-height: 100vh;
 }
 
-div.about .col-lg-5 img {
+div.about img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+}
+
+div.about div.col-lg-5 > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.about div > p {
+    text-indent: 25px;
 }
 
 div.quick-link {
-    background: linear-gradient(#795c34, white);
+    background: linear-gradient(#503D22, #503D22af);
+    color: white;
+}
+
+div.quick-link ul {
+    padding: 0;
 }
 
 div.quick-link li {
@@ -107,16 +137,17 @@ div.quick-link p > a {
 }
 
 div.quick-link p > a:link, p > a:visited {
-    color: darkslateblue;
+    color: blue;
 }
 
 .quick-link li > a:link, li > a:visited {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 div.contact {
-    margin-top: 20px;
+    background: linear-gradient(#503D22af, #503D22);
+    color: white;
 }
 
 div.contact div {
@@ -124,7 +155,7 @@ div.contact div {
 }
 
 .copyright {
-    background: linear-gradient(white,#795c34);
+    background: #503D22;
     color: white;
     text-align: center;
     padding: auto;
