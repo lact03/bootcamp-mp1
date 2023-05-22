@@ -73,7 +73,7 @@ div.card {
 }
 
 div.card a {
-    height: 80%;
+    height: 78%;
     width: 100%;
 }
 
@@ -82,9 +82,8 @@ div.card img{
     height: 100%;
 }
 
-button.dropdown-toggle {
-    height: 40px;
-    width: 90px;
+div.card-body {
+    background: lightgray;
 }
 
 /* Footer */
