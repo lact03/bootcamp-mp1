@@ -56,8 +56,9 @@ main div.col-lg-8 {
     justify-content: space-evenly;
 }
 
-main div.col-lg-8 > p, main div.col-lg-8 > h3 {
+main div.col-lg-8 > p {
     text-align: justify;
+    text-indent: 20px;
 }
 
 img[src="../img/about-us.jpg"] {
